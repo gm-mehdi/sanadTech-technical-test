@@ -31,6 +31,8 @@ A full-stack application demonstrating efficient handling of large datasets usin
 ### Prerequisites
 - Node.js (Latest LTS version recommended)
 - npm (comes with Node.js)
+- `npm install -g concurrently`
+- `npm install -g serve`
 
 ### Installation
 
