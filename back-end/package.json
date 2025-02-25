@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/preprocess.ts && nodemon src/server.ts",
-    "build": "tsc",
+    "build": "ts-node src/preprocess.ts && tsc",
     "postbuild": "cp src/*.json dist/ && cp src/usernames.txt dist/"
   },
   "keywords": [],
