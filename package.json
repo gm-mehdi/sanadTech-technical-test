@@ -2,7 +2,9 @@
   "name": "sanadtechtest",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "setup": "npm install --prefix back-end && npm install --prefix front-end"
+    "setup": "npm install --prefix back-end && npm install --prefix front-end",
+    "build": "npm run build --prefix back-end && npm run build --prefix front-end",
+    "start": "concurrently \"node back-end/dist/server.js\" \"serve -s front-end/build\""
   },
   "keywords": [],
   "author": "",

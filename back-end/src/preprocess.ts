@@ -1,6 +1,7 @@
 import fs from 'fs';
 import readline from 'readline';
 import { LetterIndex, IndexData } from './types';
+import path from 'path';
 
 const inputFile = './usernames.txt';
 
@@ -48,8 +49,11 @@ async function createIndexes(): Promise<IndexData> {
 // Run the preprocessing
 createIndexes()
   .then((indexData) => {
-    fs.writeFileSync('./line-offsets.json', JSON.stringify(indexData.lineOffsets));
-    fs.writeFileSync('./letter-index.json', JSON.stringify(indexData.letterIndex));
+    const lineOffsetsPath = path.resolve(__dirname, 'line-offsets.json');
+    const letterIndexPath = path.resolve(__dirname, 'letter-index.json');
+
+    fs.writeFileSync(lineOffsetsPath, JSON.stringify(indexData.lineOffsets, null, 2));
+    fs.writeFileSync(letterIndexPath, JSON.stringify(indexData.letterIndex, null, 2));
     console.log('Indexes created successfully!');
   })
   .catch(console.error);

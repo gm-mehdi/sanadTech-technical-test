@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/preprocess.ts && nodemon src/server.ts"
+    "start": "ts-node src/preprocess.ts && nodemon src/server.ts",
+    "build": "tsc",
+    "postbuild": "cp src/*.json dist/ && cp src/usernames.txt dist/"
   },
   "keywords": [],
   "author": "",
@@ -12,15 +14,14 @@
   "description": "",
   "dependencies": {
     "@types/express": "^5.0.0",
-    "archive": "file:..",
     "cors": "^2.8.5",
     "express": "^4.21.2",
-    "nodemon": "^3.1.9",
-    "sanadtechtest": "file:..",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "sanadtechtest": "file:.."
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17"
+    "@types/cors": "^2.8.17",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }

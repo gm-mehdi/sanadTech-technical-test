@@ -5,14 +5,6 @@
   "dependencies": {
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.5",
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.126",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
     "archive": "file:..",
     "axios": "^1.7.9",
     "react": "^19.0.0",
@@ -20,7 +12,6 @@
     "react-scripts": "5.0.1",
     "react-window": "^1.8.11",
     "sanadtechtest": "file:..",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -48,6 +39,10 @@
     ]
   },
   "devDependencies": {
-    "@types/react-window": "^1.8.8"
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-window": "^1.8.8",
+    "typescript": "^4.9.5"
   }
 }
