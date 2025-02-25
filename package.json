@@ -1,0 +1,11 @@
+{
+  "name": "sanadtechtest",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm install --prefix back-end && npm install --prefix front-end"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

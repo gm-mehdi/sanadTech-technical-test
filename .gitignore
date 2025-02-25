@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log
+pnpm-lock.yaml
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+lerna-debug.log
+
+# Build output
+dist/
+build/
+.cache/
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backend-specific ignore
+back-end/node_modules/
+back-end/.env
+back-end/dist/
+back-end/letter-index.json
+back-end/line-offsets.json
+
+# Frontend-specific ignore
+front-end/node_modules/
+front-end/.env
+front-end/build/
