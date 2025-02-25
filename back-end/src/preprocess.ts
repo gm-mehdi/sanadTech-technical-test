@@ -3,7 +3,7 @@ import readline from 'readline';
 import { LetterIndex, IndexData } from './types';
 import path from 'path';
 
-const inputFile = './usernames.txt';
+const inputFile = './src/usernames.txt';
 
 async function createIndexes(): Promise<IndexData> {
   const lineOffsets: number[] = [];
