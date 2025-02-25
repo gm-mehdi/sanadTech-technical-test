@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/preprocess.ts && nodemon src/server.ts",
     "build": "ts-node src/preprocess.ts && tsc",
-    "postbuild": "cp src/*.json dist/ && cp src/usernames.txt dist/"
+    "postbuild": "cpx src/*.json dist/ && cpx src/usernames.txt dist/"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
+    "cpx": "^1.5.0",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
