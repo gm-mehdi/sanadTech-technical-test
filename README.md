@@ -1,6 +1,22 @@
 # Large List Viewer (10M Users)
 A full-stack application demonstrating efficient handling of large datasets using virtual scrolling. The application displays a list of 10 million users with optimized performance.
 
+## Table of Contents
+
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Building the Project](#building-the-project)
+- [Starting the Application](#starting-the-application)
+- [Features](#features)
+- [Technical Details](#technical-details)
+- [API Endpoints](#api-endpoints)
+- [Project Configuration](#project-configuration)
+- [Development](#development)
+- [Dependencies](#dependencies)
+- [Building](#building)
+
+
 ### Project Structure
 ```
 ├── .gitignore
@@ -61,12 +77,18 @@ Frontend: http://localhost:3000
 
 Backend API: http://localhost:8000
 
-### FeaturesFeatures
+### Features
 - Virtual scrolling implementation for handling large datasets
 - Server-side pagination and efficient file reading
 - Material-UI based responsive interface
 - TypeScript implementation for both frontend and backend
 - Preprocessed data indexing for quick access
+
+## Technical Details
+
+- **Virtual Scrolling:** Renders only the visible portion of the list for performance optimization.
+- **Data Handling:** The back-end processes `usernames.txt` for efficient retrieval.
+- **TypeScript:** Used in both front-end and back-end for type safety.
 
 ### API Endpoints
 `GET /api/meta` - Returns metadata about the dataset including total items
@@ -77,7 +99,7 @@ Backend API: http://localhost:8000
 - Backend uses tsconfig.json for TypeScript configuration
 - Frontend is built using Create React App with TypeScript
 
-### DevelopmentDevelopment
+### Development
 For development, you can run the frontend and backend separately:
 ```
 # Backend
